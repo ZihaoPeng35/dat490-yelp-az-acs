@@ -1,14 +1,27 @@
-# DAT490 Yelp Arizona + ACS
+# DAT490 — Yelp Arizona + ACS
 
-This repo contains the full analysis code used in the project report.
+This repository contains the full code appendix (notebooks) and generated figures for our DAT490 project analyzing Yelp Arizona businesses and ZIP-level neighborhood context from the American Community Survey (ACS).
 
-## What’s included
-- `notebooks/az_data_clean.ipynb`: Yelp AZ filtering, cleaning, feature engineering
-- `notebooks/getACS.ipynb`: ACS ZIP-level covariates via Census API
-- `notebooks/EDA.ipynb`: exploratory analysis + plots saved to `figs/`
-- `notebooks/METH.ipynb`: modeling, evaluation, and feature plots
-- `figs/`: figures used in the report
+## Code Appendix (linked)
+All code is included as Jupyter notebooks in:
+- **`notebooks/`**
 
-## Notes
-Raw Yelp data is not included due to size/licensing. Notebooks assume you provide the Yelp dataset locally.
-If an ACS API key is needed, store it as an environment variable instead of hard-coding it.
+### Notebook order (recommended)
+1. `notebooks/az_data_clean.ipynb`  
+   Cleans Yelp AZ businesses and produces analysis-ready variables.
+2. `notebooks/getACS.ipynb`  
+   Pulls ACS 2023 5-year ZIP/ZCTA variables via the Census API and prepares the ZIP table.
+3. `notebooks/EDA.ipynb`  
+   Generates exploratory plots and saves them into `figs/`.
+4. `notebooks/METH.ipynb`  
+   Builds predictive models, evaluates performance, and produces modeling figures.
+
+## Figures
+All figures referenced in the report are stored in:
+- **`figs/`** (including `figs/meth/` for modeling/EDA panels)
+
+## Data note
+Raw datasets are not committed. If you want to reproduce results, download the Yelp Open Dataset and set local paths inside the notebooks, and provide a Census API key if required.
+
+## Links
+- Repo: https://github.com/ZihaoPeng35/dat490-yelp-az-acs
