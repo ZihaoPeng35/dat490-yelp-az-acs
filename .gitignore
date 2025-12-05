@@ -1,0 +1,19 @@
+# data (do not upload raw datasets)
+data/
+*.json
+*.zip
+*.parquet
+*.csv
+
+# secrets
+.env
+
+# jupyter
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
