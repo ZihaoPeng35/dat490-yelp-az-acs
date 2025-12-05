@@ -2,11 +2,11 @@
 
 This repository contains the full code appendix (notebooks) and generated figures for our DAT490 project analyzing Yelp Arizona businesses and ZIP-level neighborhood context from the American Community Survey (ACS).
 
-## Code Appendix (linked)
+## Code Appendix 
 All code is included as Jupyter notebooks in:
 - **`notebooks/`**
 
-### Notebook order (recommended)
+### Notebook order 
 1. `notebooks/az_data_clean.ipynb`  
    Cleans Yelp AZ businesses and produces analysis-ready variables.
 2. `notebooks/getACS.ipynb`  
